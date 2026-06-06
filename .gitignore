@@ -1,0 +1,23 @@
+# Local credentials
+code/config_wifi.py
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Temporary screenshots copied into assets with clean names
+data/Snipaste_*.png
+data/微信图片_*.jpg

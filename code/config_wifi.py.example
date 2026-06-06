@@ -1,0 +1,8 @@
+# Copy this file to config_wifi.py on the ESP32 device and fill in your values.
+
+WIFI_SSID = "你的WiFi名称"
+WIFI_PASS = "你的WiFi密码"
+
+# Run `ipconfig` on Windows and use your WLAN IPv4 address.
+UDP_IP = "192.168.1.100"
+UDP_PORT = 8080

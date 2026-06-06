@@ -1,0 +1,8 @@
+pandas
+folium
+matplotlib
+numpy
+pyproj
+pyserial
+flask
+websockets

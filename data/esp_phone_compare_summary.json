@@ -1,0 +1,15 @@
+{
+  "esp_samples_raw": 1051,
+  "esp_valid_samples": 863,
+  "esp_valid_rate_percent": 82.11,
+  "esp_avg_hdop": 2.651,
+  "esp_min_sats": 4,
+  "esp_max_sats": 4,
+  "phone_samples": 573,
+  "esp_path_length_m": 1536.99,
+  "phone_path_length_m": 873.23,
+  "nearest_distance_mean_m": 6.37,
+  "nearest_distance_median_m": 4.07,
+  "nearest_distance_p95_m": 23.57,
+  "nearest_distance_max_m": 34.47
+}

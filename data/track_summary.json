@@ -1,0 +1,11 @@
+{
+  "samples": 1051,
+  "valid_samples": 863,
+  "valid_rate_percent": 82.11,
+  "avg_hdop": 2.651390498261877,
+  "avg_sats": 4.0,
+  "min_sats": 4,
+  "max_sats": 4,
+  "lat_mean": 26.031011603533027,
+  "lon_mean": 119.19408861429781
+}

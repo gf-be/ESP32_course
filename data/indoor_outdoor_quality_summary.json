@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Outdoor route",
+    "file": "data\\track_flash_outdoor_001.csv",
+    "samples": 1051,
+    "valid_samples": 863,
+    "valid_rate_percent": 82.11,
+    "avg_hdop_valid": 2.651,
+    "avg_sats_valid": 4.0,
+    "invalid_samples": 188
+  },
+  {
+    "label": "Indoor short test",
+    "file": "data\\track_20260605_212206.csv",
+    "samples": 214,
+    "valid_samples": 88,
+    "valid_rate_percent": 41.12,
+    "avg_hdop_valid": 5.91,
+    "avg_sats_valid": 4.091,
+    "invalid_samples": 126
+  }
+]
