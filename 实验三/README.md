@@ -5,6 +5,8 @@
 
 本仓库为实验三最终提交包，使用 **ESP32 + GNSS 模块 + MicroPython + Python 后处理** 完成 NMEA 解析、WiFi 上传、户外采集、folium 可视化、手机参考轨迹对比、室内外定位质量统计和实时 Web 可视化回放。
 
+GitHub 仓库链接：https://github.com/gf-be/ESP32_course
+
 ## 目录结构
 
 ```text
