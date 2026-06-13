@@ -1,0 +1,4 @@
+state,n,roll_mean_deg,pitch_mean_deg,yaw_raw_mean_deg,yaw_cal_mean_deg,yaw_tilt_mean_deg,b_cal_mean_ut,yaw_cal_change_from_horizontal_deg,yaw_tilt_change_from_horizontal_deg
+horizontal,12,2.56,-4.93,307.19,281.90,275.05,36.90,0.00,0.00
+front_back_A,19,-30.73,-7.62,345.07,324.10,299.87,37.58,42.20,24.82
+front_back_B,16,32.50,2.93,284.07,263.22,258.28,36.17,-18.68,-16.77
