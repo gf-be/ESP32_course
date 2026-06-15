@@ -1,0 +1,73 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f58
+entry 0x403c8900
+I (24) boot: ESP-IDF 6.0.1 2nd stage bootloader
+I (25) boot: compile time May 29 2026 14:22:21
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (28) boot: efuse block revision: v1.4
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 8MB
+I (43) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (50) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00100000
+I (76) boot: End of partition table
+I (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bd90h ( 48528) map
+I (95) esp_image: segment 1: paddr=0001bdb8 vaddr=3fc91800 size=031e0h ( 12768) load
+I (98) esp_image: segment 2: paddr=0001efa0 vaddr=40374000 size=01078h (  4216) load
+I (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17b6ch ( 97132) map
+I (126) esp_image: segment 4: paddr=00037b94 vaddr=40375078 size=0c744h ( 51012) load
+I (138) esp_image: segment 5: paddr=000442e0 vaddr=50000000 size=00024h (    36) load
+I (144) boot: Loaded app from partition at offset 0x10000
+I (144) boot: Disabling RNG early entropy source...
+I (155) cpu_start: Multicore app
+I (164) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (165) cpu_start: Pro cpu start user code
+I (165) cpu_start: cpu freq: 160000000 Hz
+I (166) app_init: Application information:
+I (170) app_init: Project name:     experiment2_idf_dma_irq_ascii
+I (176) app_init: App version:      1
+I (179) app_init: Compile time:     May 29 2026 14:21:40
+I (184) app_init: ELF file SHA256:  beeb60adb...
+I (189) app_init: ESP-IDF:          6.0.1
+I (192) efuse_init: Min chip rev:     v0.0
+I (196) efuse_init: Max chip rev:     v0.99 
+I (200) efuse_init: Chip rev:         v0.2
+I (204) heap_init: Initializing. RAM available for dynamic allocation:
+I (210) heap_init: At 3FC9F060 len 0004A6B0 (297 KiB): RAM
+I (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (226) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (232) spi_flash: detected chip: boya
+I (235) spi_flash: flash io: dio
+W (237) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.
+I (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (263) main_task: Started on CPU0
+I (281) main_task: Calling app_main()
+
+EXPERIMENT2_IDF_DMA_IRQ_BEGIN
+WIRING,GPIO5_PWM_TO_GPIO4_ADC,GPIO7_OUT_TO_GPIO6_IRQ
+ADC_POLL,count=18374,elapsed_us=1000016,rate_hz=18373.7,cpu_load_percent=100.000,drop_percent=0.000,mean_raw=2062.90
+ADC_DMA,target_hz=20000,samples=20224,elapsed_us=1011274,rate_hz=19998.5,cpu_load_percent=0.196,drop_percent=0.000,frames=79,mean_raw=2047.90
+ADC_DMA,target_hz=50000,samples=50176,elapsed_us=1003580,rate_hz=49997.0,cpu_load_percent=0.497,drop_percent=0.000,frames=196,mean_raw=2048.42
+E (3504) adc_continuous: adc_continuous_config(484): ADC sampling frequency out of range
+ADC_DMA,target_hz=100000,error=config_ESP_ERR_INVALID_ARG
+IRQ_LEVEL1,captured=10000,drop_percent=0.000
+IRQ_LEVEL1_LATENCY,min_us=3,max_us=4,mean_us=3.500,std_us=0.500
+IRQ_LEVEL1_INTERVAL,min_us=999,max_us=1001,mean_us=1000.000,std_us=1.000
+IRQ_LEVEL3,captured=10000,drop_percent=0.000
+IRQ_LEVEL3_LATENCY,min_us=3,max_us=4,mean_us=3.500,std_us=0.500
+IRQ_LEVEL3_INTERVAL,min_us=999,max_us=1001,mean_us=1000.000,std_us=1.000
+EXPERIMENT2_IDF_DMA_IRQ_END
+I (24010) main_task: Returned from app_main()

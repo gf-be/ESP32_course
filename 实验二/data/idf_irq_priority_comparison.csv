@@ -1,0 +1,3 @@
+priority,mean_us,std_us,min_us,max_us
+IRQ_LEVEL1,3.5,0.5,3,4
+IRQ_LEVEL3,3.5,0.5,3,4

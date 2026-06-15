@@ -1,0 +1,183 @@
+{
+  "pwm_adc": [
+    {
+      "duty_percent": 0,
+      "samples": 1500,
+      "min_adc": 0,
+      "max_adc": 0,
+      "mean_adc": 0.0,
+      "mean_voltage_v": 0.0,
+      "high_ratio_percent": 0.0
+    },
+    {
+      "duty_percent": 25,
+      "samples": 1500,
+      "min_adc": 0,
+      "max_adc": 65535,
+      "mean_adc": 16122.35,
+      "mean_voltage_v": 0.8118,
+      "high_ratio_percent": 24.6
+    },
+    {
+      "duty_percent": 50,
+      "samples": 1500,
+      "min_adc": 0,
+      "max_adc": 65535,
+      "mean_adc": 32680.82,
+      "mean_voltage_v": 1.6456,
+      "high_ratio_percent": 49.87
+    },
+    {
+      "duty_percent": 75,
+      "samples": 1500,
+      "min_adc": 0,
+      "max_adc": 65535,
+      "mean_adc": 48932.94,
+      "mean_voltage_v": 2.464,
+      "high_ratio_percent": 74.67
+    },
+    {
+      "duty_percent": 100,
+      "samples": 1500,
+      "min_adc": 65535,
+      "max_adc": 65535,
+      "mean_adc": 65535.0,
+      "mean_voltage_v": 3.3,
+      "high_ratio_percent": 100.0
+    }
+  ],
+  "polling_timer_adc": [
+    {
+      "mode": "polling_tight",
+      "max_rate_hz": 13586.7,
+      "cpu_load_est_percent": 100.0,
+      "drop_rate_est_percent": 0.0,
+      "samples": 13587,
+      "elapsed_ms": 1000.024
+    },
+    {
+      "mode": "polling_busywait_1khz",
+      "max_rate_hz": 1000.3,
+      "cpu_load_est_percent": 100.0,
+      "drop_rate_est_percent": 0.0,
+      "samples": 3001,
+      "elapsed_ms": 3000.101
+    },
+    {
+      "mode": "timer_irq_1khz",
+      "max_rate_hz": 999.0,
+      "cpu_load_est_percent": 8.494,
+      "drop_rate_est_percent": 0.0,
+      "samples": 3000,
+      "elapsed_ms": 3003.0
+    }
+  ],
+  "irq_latency": {
+    "samples": 10000,
+    "min_latency_us": 29.0,
+    "max_latency_us": 249.0,
+    "mean_latency_us": 29.7231,
+    "jitter_std_us": 2.24058617107207,
+    "drop_rate_percent": 0.0,
+    "interval_mean_us": 999.9724972497249,
+    "interval_jitter_std_us": 6.40615700393931
+  },
+  "timestamp_drift": {
+    "samples": 3601,
+    "duration_s": 3599.8404637,
+    "final_drift_ms": 158.53629999992336,
+    "ppm": 44.039812763528985,
+    "complete_1h": true
+  },
+  "idf_dma_irq": {
+    "adc_poll": {
+      "tag": "ADC_POLL",
+      "count": 18374,
+      "elapsed_us": 1000016,
+      "rate_hz": 18373.7,
+      "cpu_load_percent": 100.0,
+      "drop_percent": 0.0,
+      "mean_raw": 2062.9
+    },
+    "adc_dma_all": [
+      {
+        "tag": "ADC_DMA",
+        "target_hz": 20000,
+        "samples": 20224,
+        "elapsed_us": 1011274,
+        "rate_hz": 19998.5,
+        "cpu_load_percent": 0.196,
+        "drop_percent": 0.0,
+        "frames": 79,
+        "mean_raw": 2047.9
+      },
+      {
+        "tag": "ADC_DMA",
+        "target_hz": 50000,
+        "samples": 50176,
+        "elapsed_us": 1003580,
+        "rate_hz": 49997.0,
+        "cpu_load_percent": 0.497,
+        "drop_percent": 0.0,
+        "frames": 196,
+        "mean_raw": 2048.42
+      },
+      {
+        "tag": "ADC_DMA",
+        "target_hz": 100000,
+        "error": "config_ESP_ERR_INVALID_ARG"
+      }
+    ],
+    "adc_dma_best": {
+      "tag": "ADC_DMA",
+      "target_hz": 50000,
+      "samples": 50176,
+      "elapsed_us": 1003580,
+      "rate_hz": 49997.0,
+      "cpu_load_percent": 0.497,
+      "drop_percent": 0.0,
+      "frames": 196,
+      "mean_raw": 2048.42
+    },
+    "irq_priority": [
+      {
+        "tag": "IRQ_LEVEL1",
+        "captured": 10000,
+        "drop_percent": 0.0
+      },
+      {
+        "tag": "IRQ_LEVEL1_LATENCY",
+        "min_us": 3,
+        "max_us": 4,
+        "mean_us": 3.5,
+        "std_us": 0.5
+      },
+      {
+        "tag": "IRQ_LEVEL1_INTERVAL",
+        "min_us": 999,
+        "max_us": 1001,
+        "mean_us": 1000.0,
+        "std_us": 1.0
+      },
+      {
+        "tag": "IRQ_LEVEL3",
+        "captured": 10000,
+        "drop_percent": 0.0
+      },
+      {
+        "tag": "IRQ_LEVEL3_LATENCY",
+        "min_us": 3,
+        "max_us": 4,
+        "mean_us": 3.5,
+        "std_us": 0.5
+      },
+      {
+        "tag": "IRQ_LEVEL3_INTERVAL",
+        "min_us": 999,
+        "max_us": 1001,
+        "mean_us": 1000.0,
+        "std_us": 1.0
+      }
+    ]
+  }
+}

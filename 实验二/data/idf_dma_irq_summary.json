@@ -1,0 +1,91 @@
+{
+  "adc_poll": {
+    "tag": "ADC_POLL",
+    "count": 18374,
+    "elapsed_us": 1000016,
+    "rate_hz": 18373.7,
+    "cpu_load_percent": 100.0,
+    "drop_percent": 0.0,
+    "mean_raw": 2062.9
+  },
+  "adc_dma_all": [
+    {
+      "tag": "ADC_DMA",
+      "target_hz": 20000,
+      "samples": 20224,
+      "elapsed_us": 1011274,
+      "rate_hz": 19998.5,
+      "cpu_load_percent": 0.196,
+      "drop_percent": 0.0,
+      "frames": 79,
+      "mean_raw": 2047.9
+    },
+    {
+      "tag": "ADC_DMA",
+      "target_hz": 50000,
+      "samples": 50176,
+      "elapsed_us": 1003580,
+      "rate_hz": 49997.0,
+      "cpu_load_percent": 0.497,
+      "drop_percent": 0.0,
+      "frames": 196,
+      "mean_raw": 2048.42
+    },
+    {
+      "tag": "ADC_DMA",
+      "target_hz": 100000,
+      "error": "config_ESP_ERR_INVALID_ARG"
+    }
+  ],
+  "adc_dma_best": {
+    "tag": "ADC_DMA",
+    "target_hz": 50000,
+    "samples": 50176,
+    "elapsed_us": 1003580,
+    "rate_hz": 49997.0,
+    "cpu_load_percent": 0.497,
+    "drop_percent": 0.0,
+    "frames": 196,
+    "mean_raw": 2048.42
+  },
+  "irq_priority": [
+    {
+      "tag": "IRQ_LEVEL1",
+      "captured": 10000,
+      "drop_percent": 0.0
+    },
+    {
+      "tag": "IRQ_LEVEL1_LATENCY",
+      "min_us": 3,
+      "max_us": 4,
+      "mean_us": 3.5,
+      "std_us": 0.5
+    },
+    {
+      "tag": "IRQ_LEVEL1_INTERVAL",
+      "min_us": 999,
+      "max_us": 1001,
+      "mean_us": 1000.0,
+      "std_us": 1.0
+    },
+    {
+      "tag": "IRQ_LEVEL3",
+      "captured": 10000,
+      "drop_percent": 0.0
+    },
+    {
+      "tag": "IRQ_LEVEL3_LATENCY",
+      "min_us": 3,
+      "max_us": 4,
+      "mean_us": 3.5,
+      "std_us": 0.5
+    },
+    {
+      "tag": "IRQ_LEVEL3_INTERVAL",
+      "min_us": 999,
+      "max_us": 1001,
+      "mean_us": 1000.0,
+      "std_us": 1.0
+    }
+  ]
+}

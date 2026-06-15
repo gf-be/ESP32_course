@@ -1,0 +1,8 @@
+sample_count: 3920
+sample_period_s: 0.100000
+duration_s: 391.893
+bias_instability_proxy_c: 0.0669888828
+bias_instability_tau_s: 2.6
+random_walk_coeff_c_per_sqrt_s: 0.0311846463
+gyro_style_rrw_coeff_c_per_sqrt_s: 0.0540133918
+random_walk_tau_range_s: 1.2..48

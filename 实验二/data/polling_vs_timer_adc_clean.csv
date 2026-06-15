@@ -1,0 +1,4 @@
+mode,max_rate_hz,cpu_load_est_percent,drop_rate_est_percent,samples,elapsed_ms
+polling_tight,13586.7,100.0,0.0,13587,1000.024
+polling_busywait_1khz,1000.3,100.0,0.0,3001,3000.101
+timer_irq_1khz,999.0,8.494,0.0,3000,3003.0
