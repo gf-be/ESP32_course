@@ -1,0 +1,21 @@
+# ESP32 GPS offline logger
+# log_path,/gps_logs/gps_nmea_0009.txt
+# gps_uart_id,2
+# gps_rx_pin,16
+# gps_tx_pin,17
+# gps_baudrate,9600
+# start_delay_s,10
+# capture_duration_s,900
+# format,elapsed_ms,nmea_sentence
+# status,10 s,nmea,0,fix,0,utc,
+# status,20 s,nmea,0,fix,0,utc,
+# status,30 s,nmea,0,fix,0,utc,
+# status,40 s,nmea,0,fix,0,utc,
+# status,50 s,nmea,0,fix,0,utc,
+# status,60 s,nmea,0,fix,0,utc,
+# status,70 s,nmea,0,fix,0,utc,
+# status,80 s,nmea,0,fix,0,utc,
+# status,90 s,nmea,0,fix,0,utc,
+# status,100 s,nmea,0,fix,0,utc,
+# status,110 s,nmea,0,fix,0,utc,
+# status,120 s,nmea,0,fix,0,utc,

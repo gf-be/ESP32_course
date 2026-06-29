@@ -1,0 +1,14 @@
+{
+  "source_file": "mag_rotate_20260616_163743.csv",
+  "samples": 1800,
+  "hard_iron_x": 63.0,
+  "hard_iron_y": -104.5,
+  "hard_iron_z": 32.5,
+  "half_range_x": 399.0,
+  "half_range_y": 454.5,
+  "half_range_z": 439.5,
+  "axis_imbalance": 1.1390977443609023,
+  "radius_mean": 409.74018236659356,
+  "radius_std": 30.14553880338146,
+  "radius_cv": 0.07357232729596025
+}

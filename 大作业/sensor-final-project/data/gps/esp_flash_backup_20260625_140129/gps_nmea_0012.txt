@@ -1,0 +1,9 @@
+# ESP32 GPS offline logger
+# log_path,/gps_logs/gps_nmea_0012.txt
+# gps_uart_id,2
+# gps_rx_pin,16
+# gps_tx_pin,17
+# gps_baudrate,9600
+# start_delay_s,10
+# capture_duration_s,900
+# format,elapsed_ms,nmea_sentence

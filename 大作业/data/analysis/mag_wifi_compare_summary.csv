@@ -1,0 +1,15 @@
+item,wifi_off,wifi_on_scan,delta_or_ratio,unit,note
+source_file,mag_wifi_off_20260616_164844.csv,mag_wifi_on_scan_20260616_164844.csv,,,latest paired capture
+samples,1200,1200,,rows,
+duration,59.950,59.950,,s,
+wifi_scan_count,0.0,8.0,,times,WiFi-on condition scans APs repeatedly
+mx_mean,-207.381,-206.930,0.451,raw count,mean shift after WiFi enabled
+mx_std,18.603,3.386,0.182,ratio,"std ratio, WiFi on/off"
+my_mean,-301.131,-287.104,14.027,raw count,mean shift after WiFi enabled
+my_std,22.669,4.428,0.195,ratio,"std ratio, WiFi on/off"
+mz_mean,309.902,303.317,-6.586,raw count,mean shift after WiFi enabled
+mz_std,7.736,1.142,0.148,ratio,"std ratio, WiFi on/off"
+norm_mean,479.877,466.134,-13.743,raw count,field magnitude shift
+norm_std,19.093,1.211,0.063,ratio,magnitude std ratio
+vector_shift,,,15.502,raw count,3-axis mean vector shift
+vector_shift_percent_of_field,,,3.230,%,shift relative to WiFi-off mean field magnitude

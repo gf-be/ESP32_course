@@ -1,0 +1,10 @@
+item,value,unit,note
+source_file,staircase_esp32_0003.csv,,
+records,12,rows,floor records
+floors,1-6,,
+chip_id,0x58,,BMP280 expected 0x58
+pressure_slope_per_floor,-44.523514285716224,Pa/floor,expected negative
+pressure_r2,0.9979794004253154,ratio,should be > 0.98
+altitude_slope_per_floor,3.7505242857142855,m/floor,floor height estimate
+altitude_r2,0.9979898765266906,ratio,
+altitude_range,18.6505,m,

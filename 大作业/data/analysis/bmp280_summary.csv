@@ -1,0 +1,13 @@
+﻿item,value,unit,note
+static_source_file,bmp280_static_20260617_084325.csv,,
+motion_source_file,bmp280_height_change_20260617_084325.csv,,
+chip_id,0x58,,BMP280 normally 0x58
+static_samples,1500,rows,
+motion_samples,900,rows,
+static_pressure_std,2.072334,Pa,smaller is better
+static_temperature_std,0.097628,C,
+static_altitude_std,0.173658,m,computed from pressure
+motion_altitude_min,-1.770300,m,
+motion_altitude_max,-0.380500,m,
+motion_altitude_range,1.389800,m,
+motion_pressure_range,16.578000,Pa,

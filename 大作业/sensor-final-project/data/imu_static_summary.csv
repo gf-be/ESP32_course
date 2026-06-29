@@ -1,0 +1,23 @@
+item,value,unit,report_note
+source_file,imu_static_120s_20260616_162820.csv,,raw static sampling file
+samples,6000,rows,valid samples
+duration,119.980,s,duration estimated from timestamps
+sample_rate,50.000,Hz,estimated from timestamps
+gyro_bias_x,0.221958,deg/s,gyro X bias
+gyro_bias_y,0.982664,deg/s,gyro Y bias
+gyro_bias_z,-0.123877,deg/s,gyro Z bias
+gyro_std_x,0.104434,deg/s,gyro X static noise std
+gyro_std_y,0.103802,deg/s,gyro Y static noise std
+gyro_std_z,0.086118,deg/s,gyro Z static noise std
+acc_mean_x,-0.063585,g,acc X mean
+acc_mean_y,0.009315,g,acc Y mean
+acc_mean_z,1.023372,g,acc Z mean
+acc_std_x,0.003286,g,acc X std
+acc_std_y,0.003049,g,acc Y std
+acc_std_z,0.004251,g,acc Z std
+acc_norm_mean,1.025397,g,acc magnitude mean
+acc_norm_std,0.004275,g,acc magnitude std
+acc_norm_mean_abs_error,25.397,mg,absolute error of mean |a| against 1g
+acc_norm_mae,25.406,mg,sample-wise mean absolute |a| error
+temp_mean,43.853,degC,temperature mean
+temp_range,43.754-43.930,degC,temperature range

@@ -1,0 +1,6 @@
+﻿item,value,unit,note
+source_file,gyro_allan_20260616_205634.csv,,stationary IMU data
+sample_rate,50.000000,Hz,from CSV metadata
+window,64,samples,six-channel CNN input
+stride,4,samples,training/evaluation stride
+epochs,18,epochs,1D-CNN training

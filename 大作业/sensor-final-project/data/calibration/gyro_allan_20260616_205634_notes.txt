@@ -1,0 +1,23 @@
+Gyroscope bias and Allan deviation capture
+timestamp: 20260616_205634
+csv: gyro_allan_20260616_205634.csv
+sample_hz: 50
+duration_s: 1800
+i2c: SDA=GPIO21, SCL=GPIO22
+gyro_range: +/-250 dps
+dlpf_cfg: 3
+wifi: off during capture
+
+Physical experiment record:
+1. Keep the ESP32 expansion board completely still for the whole capture.
+2. Fix the board on a stable desk using tape, foam, paper box, or other non-magnetic support.
+3. Keep away from vibration sources such as fans, tapping the desk, moving laptops, and motors.
+4. Do not touch the USB cable or board after pressing Enter.
+5. Keep the environment temperature as stable as possible.
+6. If the board is moved during capture, repeat the experiment.
+
+Report figures to generate later:
+1. Gyroscope three-axis output over time.
+2. Gyroscope zero-bias histogram.
+3. Gyroscope Allan deviation curves.
+4. Bias and noise statistics table.

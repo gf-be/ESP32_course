@@ -1,0 +1,20 @@
+﻿item,value,unit,note
+source_file,gyro_allan_20260616_205634.csv,,latest gyro Allan data
+samples,90000,rows,
+duration,1799.980,s,
+sample_rate,50.000000,Hz,estimated from timestamps
+temp_min,42.759,C,
+temp_max,43.527,C,
+temp_range,0.768,C,
+gyro_x_bias,0.228303741,deg/s,stationary mean
+gyro_x_std,0.052827040,deg/s,stationary noise std
+gyro_x_allan_min,0.001480901,deg/s,minimum Allan deviation
+gyro_x_allan_tau,157.740000,s,tau at minimum Allan deviation
+gyro_y_bias,0.964654373,deg/s,stationary mean
+gyro_y_std,0.071176259,deg/s,stationary noise std
+gyro_y_allan_min,0.001963455,deg/s,minimum Allan deviation
+gyro_y_allan_tau,106.160000,s,tau at minimum Allan deviation
+gyro_z_bias,-0.100939275,deg/s,stationary mean
+gyro_z_std,0.060315165,deg/s,stationary noise std
+gyro_z_allan_min,0.001939498,deg/s,minimum Allan deviation
+gyro_z_allan_tau,36.940000,s,tau at minimum Allan deviation

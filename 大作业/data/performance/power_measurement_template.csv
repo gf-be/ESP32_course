@@ -1,0 +1,4 @@
+﻿state,description,current_mA,current_unit,voltage,voltage_unit,power_mW,note
+idle,ESP32上电、传感器初始化后空闲,,mA,3.3,V,,万用表串联供电正极，记录稳定读数
+sampling,IMU+磁力计连续采集并串口输出,,mA,3.3,V,,运行采集脚本时记录稳定读数
+fusion,姿态融合算法运行,,mA,3.3,V,,运行频率/融合测试脚本时记录稳定读数
