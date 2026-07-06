@@ -1,9 +1,0 @@
-﻿item,value
-meta, duration_s,10
-meta, i2c_freq,400000
-imu_read_count,9616
-imu_elapsed_ms,10000
-imu_sampling_rate_hz,961.600
-fusion_update_count,3653
-fusion_elapsed_ms,10002
-fusion_update_rate_hz,365.227

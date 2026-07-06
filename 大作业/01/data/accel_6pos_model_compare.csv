@@ -1,4 +1,0 @@
-model,mean_vector_avg_error_mg,mean_vector_max_error_mg,mean_vector_rms_error_mg,sample_mae_error_mg,sample_rms_error_mg,sample_max_error_mg,improvement_vs_raw_mean_vector,note
-raw,12.935,24.704,14.296,13.421,16.098,184.721,1.000,uncalibrated
-diag6_bias_scale,3.691,5.272,3.997,4.891,8.311,204.575,3.505,diagonal bias and scale only
-affine12_bias_scale_misalignment,0.755,1.812,0.973,3.125,7.350,205.081,17.122,"bias, scale and axis misalignment"
