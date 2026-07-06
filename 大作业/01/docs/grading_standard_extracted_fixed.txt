@@ -1,0 +1,266 @@
+ѧо20 25 ~ 20 26 ѧ   ѧ
+ ⼼ γ
+ĿҪ
+ѧԺ         ѧ꼶2025 ʦ  ֣
+һĿҪ
+1. Ŀ
+⼼γ̵ۺϿˣּڽѧѧĴģ궨˲㷨AI ǿPCB Ƶ֪ʶڻͨһ嵽Ʒ̱ջͨƣѧգ
+ƷϵͳƷȶָ꣬ٽӲ
+ഫںϵͳӲź
+ӻ˲ ESKF ȫϵ̬ں㷨ʵ
+AI ǿ㷨ıԵ˲
+ֻʲƿɸáɸ֡ɵ
+2. ӲҪ
+һֱӲ ESP32-WROOM-32 ϵչ壬 2.54mm 
+2 ֱ޴MPU6050 IMUHMC5883Lƣ
+ѡ޴MS5611 ѹơUblox M6N/M8N GPS ģ
+㷨 2 ִͳ˲㷨1  AI ǿ㷨
+ָͨʵ֤ʱֺͼ˵
+ļ롢ݡȫϴγɿɸϵͳ
+ϵͳҪ
+1. ӲҪESP32 չ壩
+1.1 
+ߴƣ70mm50mmߴ磬׼ 2 壩
+磺ͨ ESP32  5V/3.3V 磬ⲿԴ
+ӿڣȫ 2.54mm 룬 ESP32 һһӦI05C ߹(SCL/SDA)  дͬһ I05C  |GPS ӿ|4-pin 2.54mm (VCC/GND/TX/RX)| NEO-6M,öŰ |LED ָʾ| 1 Դָʾ LED ɫ, 1k衣
+ֽ飺MPU6050 Ű룬ٱԵӦ   5mm  HMC5883LԶ ESP32ESP32оƬ/WiFiߵĴŸž࣬Զ뷢Ԫ¶Ӱѹ GPS ڰԵ                   ⣬I05C һ͹(Ტ)4.7k  2(SCL/SDA һ)
+1.2 ޴·
+MPU6050  IMU
+ͨŽӿڣSPIȣ I2C
+ 0.1F ȥݡԴ˲·
+Ԥжţݾ
+HMC5883L ƣ
+ͨŽӿڣI2C
+ȥݺ
+ԶԴǿԴ
+1.3 ѡ޴·ѡ 1 ֣
+MS5611 BMP280ѹƣSPI ӿڣ߾ѹ߶Ȳ
+Ublox M6N GPS ģ飺UART ӿڣԤ߽ӿ
+Դѡ 3.3V LDOΪṩɾԴ
+1.4 źҪ󣨶Ӧݣ
+дԴűͽ 0.1F մȥ
+ģź߾̣ź߽
+ĵƽƣֵָغģ
+ԤԵ㣬ԺźŲ
+2. 㷨Ҫ
+2.1 㷨ɣ
+궨㷨
+ٶȼλñ궨12 ģͣƫ 50mg  2mg(25)
+ϱ궨Ӳ /  15  2(7)
+ƫУ׼ Allan ƫƯƽ 10
+ͳ̬ں㷨ʵ 2 ֣
+˲
+Mahony ˲
+Madgwick ˲
+չ˲EKF
+ܶԱȷ
+ԱȲͬ㷨̬ȡ㸴ӶȡCPU ռ
+ÿ㷨ľ
+ݿӻ
+궨ǰ󾫶ȶԱȱ    Python matplotlib|ͱ
+Allan       Python allantools|ARW/BI ע
+ 3D ɢ(У׼ǰ) Python mplot3d   
+ʵʱ̬ʾ          + Python / Web бӿǶȱ仯
+GPS 켣       Python folium     Թ켣
+2.2 㷨80 ϱɣ
+״̬˲ESKF
+Ⱥ SO (3) ̬ʾ
+ʵ IMU Ԥ״̬
+Ŀ̬ȣܡ0.2㣨̬
+AI ǿ㷨ʵ 1 ֣
+1D-CNN IMU ȥԱȴͳͨ˲ SNR  dB 
+һ׿˲ 1D-CNN Ļȥܹ
+Ŀ꣺ߵƯƴ 10m/min 3m/min
+2.3 ս㷨90 Ͽѡ
+ʴںϣGPS 1Hz + IMU 200Hz 첽״̬
+LSTM GPS ʧԤ⣺ GPS źŶʧʱ LSTM Ԥ켣
+TLIO/DeepVIO ģ鸴֣ѧϰĽϹߵ̼
+ഫʱͬʵ IMUơGPS ΢뼶ʱ
+׶ΰ
+һ׶ΣĩӲ飨Specд 15 ܣ
+Ҫûд Spec ƣʼ
+ȷϵͳĴָ꣬ÿָо֣
+
+ָ
+Ŀֵ
+֤
+ָ
+̬̬ȡܡ0.2
+̬̬ȡܡ0.5
+ߵƯơ3m/min
+߾ǻ׼Ա
+GPS 켣Ա
+ָ
+̬Ƶʡ100Hz
+ʡ200Hz
+ʾжƵ
+ָ
+ϵͳܹġ100mA@3.3V
+ñ
+ɱָ
+ PCB+BOM50 Ԫ
+ + BOM 嵥
+дϸӲƷԭͼͼŷ䡢ѡ
+дϸ㷨Ʒ㷨ͼ״̬塢ģ
+ڶ׶ΣPCB  16 -17ܣ
+ʹKiCadԭͼ PCB Layout  2.5cm
+ʹAI ƣ Cursor/Claude ԭͼ AI 
+ DRCƹ飩ȷûе
+ Gerber ļ BOM 嵥ڼµ5 ƬԼ 30 Ԫ5-7 쵽
+׶ΣӲԣ 17-18  
+ԪӲͨ
+ÿȷȡ
+ˮƽź֤ź
+¼Ӻ͵Թͽ
+Ľ׶Σ㷨벿𣨵 18  
+ʵдݲɼ
+ʵִ궨㷨ɱ궨֤궨Ч
+ʵִͳ̬ں㷨ܶԱ
+ʵ ESKF  AI ǿ㷨
+㷨 ESP32 ϣȷʵʱ
+׶Σָ֤ܲ 18  
+ Spec жָ֤
+¼вݣɶԱͼ
+ʵֵĿֵĲ죬Ľ
+¼ϵͳʾƵչʾϵͳĹܺ
+׶Σ׼ʲ 19  
+׼ PPTصչʾ Spec ɶȡ㷨ԭԽ
+ļϴ GitHub ֿ
+׫дϸƱ棬ƷԽܽᷴ˼
+ġ˱׼ϸ
+
+
+ռ
+ϸ
+Spec ɶ
+40%
+99ָʵݺͶԱͼ
+99ָɣ15 
+99ָɣ10 
+99 / ɱָɣ10 
+99δָԭĽ5 
+ѧ
+20%
+99궨㷨ȷԣ5 
+99˲㷨Ƶʵ֣10 
+99ȣ5 
+AI Э
+15%
+99AI ߵĺʹã5 
+99AI ľ⣺5 
+99 AI ݵ޸ģ5 
+ɸ
+15%
+99GitHub ֿԣ5 ֣ԭͼPCBGerberBOM롢ݡ棩
+99ĵȣ5 
+99ɶעͣ5 
+
+10%
+99ʾȣ3 
+99ش׼ȷԣ4 
+99ʱƣ3 
+ӷ 10 ֣
+ս㷨+5 
+ 3 ϴ+3 
+ƴԣ+2 
+Ŀγ GitHub ֿ⣺ + 5 
+
+δύ GitHub ֿ⣺-40 
+٣-100 ֣
+糬ʱÿ - 1 
+Ϯƣ-100 ֣
+塢ʲҪӲҪ
+Ƴɹϴ GitHub ֿ⣬ֿṹ£
+sensor-final-project/
+ hardware/                # Ӳļ
+    schematic.pdf        # ԭͼPDF
+    pcb.pdf              # PCBPDF
+    gerber/              # Gerberļ
+    BOM.csv              # 嵥
+ firmware/                # ̼
+    drivers/             # 
+    calibration/         # 궨㷨
+    fusion/              # ں㷨
+    ai_enhance/          # AIǿ㷨
+    main.py              # 
+ data/                    # 
+    calibration/         # 궨ԭʼ
+    fusion_comparison/   # 㷨Ա
+    performance/         # ܲ
+ docs/                    # ĵ
+    spec.md              # Ʒ
+    test_report.md       # Ա
+    final_report.pdf     # Ʊ
+ demo.mp4                 # ʾƵ
+ README.md                # ֿ˵
+Ҫ
+README.md ĿܡӲָܹϡԽ
+дϸעͣؼ㷨עԭͲο
+вݱԭʼʵݣ޸Ļα
+ֿΪʱύֿ
+Ҫ
+ʱ䣺10 ʾ + 10 Ӵ
+ʾݣ
+ƵӲϵͳSpec ܣ2 ӣ
+Ӳ㣨3 ӣ
+㷨ԭʵ֣5 ӣ
+ܲԽԱȣ3 ӣ
+ܽĽ2 ӣ
+ӲҪ
+ֳʾϵͳЧ
+ָչʾʵݺͼ
+չʾ GitHub ֿ
+רص㣺
+ģ͵
+ͬ˲㷨Ĺȡ
+ESKF ״̬
+AI ǿ㷨
+źƵľʩ
+ Ľṹ(ѭ)
+:ഫںչ뾫㷨ʵ
+ժҪ(300 )
+ؼ(4-6 )
+1 02
+1.1 02о(MEMS ڵ/еӦ)
+1.2 02(MEMS ԭʼȲ,궨)
+1.3 02Ĺ(Լʲô,仰ܽ)
+2 02ϵͳӲ
+2.1 02ܹ(ͼ)
+2.2 02ѡͼԱ
+2.3 02PCB ԭͼ
+2.4 02PCB 
+2.5 02ӹ뺸
+3 02
+3.1 02I05C 豸
+3.2 02MPU6050 ʵ
+3.3 02HMC5883L ʵ
+3.4 02(BMP280 ʵ,)
+3.5 02GPS NMEA (,ʵ)
+4 02궨뾫㷨
+4.1 02ٶȼ 12 ģ
+4.2 02λñ궨С
+4.3 02 DLS+SVD
+4.4 02¶Ȳ
+4.5 02Allan Է
+5 02ഫں
+5.1 02˲ / Madgwick ˲
+5.2 02б
+5.3 02(GNSS/INS ,)
+6 02ʵ
+6.1 02궨ЧԱ
+1:ٶȼƱ궨ǰָԱ
+2:Ʊ궨ǰָԱ
+3:¶ȲЧ
+6.2 02Allan ʵ
+6.3 02̬ƾ
+6.4 02(GPS 켣Ա,)
+7 02ܽչ
+7.1 02ܽ
+7.2 02Ľ
+7.3 02ջ뷴˼
+л
+ο(BibTeX)
+¼ A:PCB ԭͼ(ҳ)
+¼ B:ؼ嵥(ĺ,ȫ)
+¼ C:嵥(BOM)
+¼ D:ͼ

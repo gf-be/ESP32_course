@@ -1,0 +1,37 @@
+﻿item,value,unit,note
+phone_gpx_file,F:\mechineSight\stm32\罗丹\大作业\data\20260629户外步行.gpx,,
+esp32_points_file,F:\mechineSight\stm32\罗丹\大作业\sensor-final-project\data\analysis\gps_track_points_offline_20260629_215118.csv,,
+phone_points,404,points,
+esp32_raw_points,1456,points,
+esp32_filtered_points,1364,points,satellites>=4 and HDOP<=5
+phone_total_distance_extension,951.0,m,from GPX extensions
+phone_total_time_extension,940.0,s,from GPX extensions
+phone_raw_distance_from_points,920.1062304032569,m,polyline distance from GPX points
+esp32_raw_distance,1750.3377754788355,m,
+esp32_filtered_distance,1641.0515707834804,m,
+esp32_raw_to_phone_mean,7.553956535223191,m,"nearest distance, ESP32 point to phone path"
+esp32_raw_to_phone_median,2.713849776627466,m,
+esp32_raw_to_phone_p95,21.209220296513394,m,
+esp32_filtered_to_phone_mean,7.179902607688474,m,"nearest distance, filtered ESP32 point to phone path"
+esp32_filtered_to_phone_median,2.5605996795490364,m,
+esp32_filtered_to_phone_p95,18.274665978017428,m,
+phone_to_esp32_raw_mean,3.1393598935970313,m,"nearest distance, phone point to ESP32 path"
+phone_to_esp32_raw_median,1.3617844789165727,m,
+phone_to_esp32_filtered_mean,3.1435794573593814,m,"nearest distance, phone point to filtered ESP32 path"
+phone_to_esp32_filtered_median,1.3617844789165727,m,
+esp32_raw_points,1456,,
+esp32_raw_raw_distance_m,1750.3377754788355,m,
+esp32_raw_bbox_ns_m,178.35666233751974,m,
+esp32_raw_bbox_ew_m,472.68346294712916,m,
+esp32_raw_lat_min,26.0291385,,
+esp32_raw_lat_max,26.030742499999995,,
+esp32_raw_lon_min,119.19301766666668,,
+esp32_raw_lon_max,119.1977485,,
+esp32_filtered_points,1364,,
+esp32_filtered_raw_distance_m,1641.0515707834804,m,
+esp32_filtered_bbox_ns_m,168.27498898858408,m,
+esp32_filtered_bbox_ew_m,472.68350622469643,m,
+esp32_filtered_lat_min,26.0291385,,
+esp32_filtered_lat_max,26.03065183333333,,
+esp32_filtered_lon_min,119.19301766666668,,
+esp32_filtered_lon_max,119.1977485,,

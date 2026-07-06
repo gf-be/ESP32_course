@@ -1,0 +1,8 @@
+﻿item,value,unit
+samples,16500.000000,rows
+data_duration_s,332.920000,s
+sample_rate_hz,49.561456,Hz
+complementary_update_hz,363093.062264,Hz
+mahony_update_hz,193656.517269,Hz
+madgwick_update_hz,37846.380081,Hz
+analysis_total_s,0.662216,s

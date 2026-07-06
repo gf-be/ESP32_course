@@ -1,0 +1,13 @@
+﻿item,value,unit,note
+source_file,F:\mechineSight\stm32\罗丹\大作业\data\bmp280\bmp280_height_change_20260617_084325.csv,,
+samples,900,rows,
+duration,179.800,s,
+sample_period_median,0.200000,s,
+p0_reference,100676.238,Pa,median of initial pressure samples
+raw_height_std,0.179568,m,barometer-only height spread
+kf_height_std,0.180744,m,filtered height spread
+raw_minus_kf_std,0.015165,m,high-frequency baro component
+kf_sigma_z,0.282417,m,measurement noise estimated from initial segment
+kf_sigma_a,0.450000,m/s^2,process noise for vertical acceleration model
+temperature_range,1.970,degC,temperature cross-sensitivity indicator
+weather_drift_rule,8.4,m/hPa,pressure reference error dominates long-term absolute altitude

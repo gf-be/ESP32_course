@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <defs>
+    <style>
+      .bg { fill: #f7fafc; }
+      .title { font: 700 38px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #102026; }
+      .subtitle { font: 400 18px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #53666f; }
+      .band-title { font: 700 22px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #18313a; }
+      .box-title { font: 700 20px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #102026; }
+      .box-text { font: 400 16px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #40545c; }
+      .small { font: 400 14px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #5d7179; }
+      .layer { fill: #ffffff; stroke: #d8e2e7; stroke-width: 2; rx: 18; }
+      .sensor { fill: #e8f5f1; stroke: #6bbba2; stroke-width: 2; rx: 14; }
+      .core { fill: #e8f0ff; stroke: #6e95d8; stroke-width: 2; rx: 14; }
+      .algo { fill: #fff4e5; stroke: #e4a64f; stroke-width: 2; rx: 14; }
+      .pc { fill: #f0ecff; stroke: #9b7be5; stroke-width: 2; rx: 14; }
+      .out { fill: #fceceb; stroke: #dc817a; stroke-width: 2; rx: 14; }
+      .note { fill: #edf2f5; stroke: #b7c5cc; stroke-width: 1.5; rx: 12; }
+      .arrow { stroke: #304851; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .arrow-soft { stroke: #7b8e96; stroke-width: 2.2; fill: none; marker-end: url(#arrow-soft); stroke-dasharray: 7 7; }
+      .bus { stroke: #256b5b; stroke-width: 4; fill: none; marker-end: url(#arrow-green); }
+      .uart { stroke: #6f56c9; stroke-width: 4; fill: none; marker-end: url(#arrow-purple); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#304851"/>
+    </marker>
+    <marker id="arrow-soft" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7b8e96"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#256b5b"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#6f56c9"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="980"/>
+  <text class="title" x="70" y="70">多传感器融合扩展板系统总体架构</text>
+  <text class="subtitle" x="72" y="104">ESP32 + MPU6050/MPU6500 + HMC5883L/GY-273 + BMP280 + GPS6MV2，完成标定、姿态融合、GPS/IMU 松耦合 ESKF、数据可视化与报告分析。</text>
+
+  <!-- Layer backgrounds -->
+  <rect class="layer" x="55" y="145" width="1490" height="165"/>
+  <text class="band-title" x="82" y="182">1. 硬件与传感器层</text>
+
+  <rect class="layer" x="55" y="340" width="1490" height="190"/>
+  <text class="band-title" x="82" y="377">2. ESP32 固件与实时采集层</text>
+
+  <rect class="layer" x="55" y="560" width="1490" height="170"/>
+  <text class="band-title" x="82" y="597">3. 算法处理层</text>
+
+  <rect class="layer" x="55" y="760" width="1490" height="155"/>
+  <text class="band-title" x="82" y="797">4. 电脑端分析、可视化与论文输出层</text>
+
+  <!-- Sensors -->
+  <rect class="sensor" x="95" y="205" width="230" height="75"/>
+  <text class="box-title" x="118" y="234">MPU6050/MPU6500</text>
+  <text class="box-text" x="118" y="260">三轴加速度 + 三轴陀螺仪</text>
+
+  <rect class="sensor" x="365" y="205" width="220" height="75"/>
+  <text class="box-title" x="388" y="234">HMC5883L / GY-273</text>
+  <text class="box-text" x="388" y="260">三轴磁力计，航向观测</text>
+
+  <rect class="sensor" x="625" y="205" width="205" height="75"/>
+  <text class="box-title" x="648" y="234">BMP280</text>
+  <text class="box-text" x="648" y="260">气压、温度、相对高度</text>
+
+  <rect class="sensor" x="870" y="205" width="205" height="75"/>
+  <text class="box-title" x="893" y="234">GPS6MV2</text>
+  <text class="box-text" x="893" y="260">经纬度、速度、航迹角</text>
+
+  <rect class="note" x="1135" y="205" width="345" height="75"/>
+  <text class="box-title" x="1160" y="234">PCB 扩展板与供电</text>
+  <text class="box-text" x="1160" y="260">I2C 总线、UART、LED 状态指示、外部供电采集</text>
+
+  <!-- ESP32 firmware -->
+  <rect class="core" x="95" y="405" width="260" height="88"/>
+  <text class="box-title" x="118" y="435">ESP32 MicroPython 主程序</text>
+  <text class="box-text" x="118" y="462">上电初始化、定时采样、串口输出</text>
+
+  <rect class="core" x="405" y="405" width="230" height="88"/>
+  <text class="box-title" x="428" y="435">传感器驱动</text>
+  <text class="box-text" x="428" y="462">I2C 读写、寄存器配置、GPS NMEA 解析</text>
+
+  <rect class="core" x="685" y="405" width="230" height="88"/>
+  <text class="box-title" x="708" y="435">数据时间戳与缓存</text>
+  <text class="box-text" x="708" y="462">t_ms、采样率统计、异常值检查</text>
+
+  <rect class="core" x="965" y="405" width="230" height="88"/>
+  <text class="box-title" x="988" y="435">实时算法部署</text>
+  <text class="box-text" x="988" y="462">Mahony PI、15 维 ESKF 演示输出</text>
+
+  <rect class="core" x="1245" y="405" width="235" height="88"/>
+  <text class="box-title" x="1268" y="435">通信接口</text>
+  <text class="box-text" x="1268" y="462">USB 串口、CSV 流、电脑端 WebSocket</text>
+
+  <!-- Algorithms -->
+  <rect class="algo" x="95" y="625" width="245" height="75"/>
+  <text class="box-title" x="118" y="654">传感器标定</text>
+  <text class="box-text" x="118" y="680">加速度 12 参数、磁力计椭球、陀螺 Allan</text>
+
+  <rect class="algo" x="380" y="625" width="245" height="75"/>
+  <text class="box-title" x="403" y="654">姿态融合</text>
+  <text class="box-text" x="403" y="680">互补滤波、Mahony、Madgwick</text>
+
+  <rect class="algo" x="665" y="625" width="245" height="75"/>
+  <text class="box-title" x="688" y="654">位置/高度融合</text>
+  <text class="box-text" x="688" y="680">GPS/IMU 松耦合 15D ESKF、BMP280 高度 KF</text>
+
+  <rect class="algo" x="950" y="625" width="245" height="75"/>
+  <text class="box-title" x="973" y="654">AI 去噪与对比</text>
+  <text class="box-text" x="973" y="680">低通、一阶 KF、1D-CNN 指标对比</text>
+
+  <rect class="algo" x="1235" y="625" width="245" height="75"/>
+  <text class="box-title" x="1258" y="654">性能与鲁棒性评估</text>
+  <text class="box-text" x="1258" y="680">频率、功耗、WiFi 干扰、Q 参数敏感性</text>
+
+  <!-- PC/output -->
+  <rect class="pc" x="95" y="825" width="265" height="65"/>
+  <text class="box-title" x="118" y="852">Python 离线分析</text>
+  <text class="box-text" x="118" y="875">CSV 统计、误差表、Matplotlib 图表</text>
+
+  <rect class="pc" x="400" y="825" width="265" height="65"/>
+  <text class="box-title" x="423" y="852">ECharts / Web 实时演示</text>
+  <text class="box-text" x="423" y="875">姿态长方体、曲线、轨迹、滤波指标</text>
+
+  <rect class="pc" x="705" y="825" width="240" height="65"/>
+  <text class="box-title" x="728" y="852">GPS 轨迹可视化</text>
+  <text class="box-text" x="728" y="875">Folium 地图叠加、GPX/ESP32 对比</text>
+
+  <rect class="out" x="985" y="825" width="230" height="65"/>
+  <text class="box-title" x="1008" y="852">论文图表与表格</text>
+  <text class="box-text" x="1008" y="875">标定前后、Allan、椭球、频率功耗</text>
+
+  <rect class="out" x="1255" y="825" width="225" height="65"/>
+  <text class="box-title" x="1278" y="852">提交材料</text>
+  <text class="box-text" x="1278" y="875">README、docs、firmware、data、demo</text>
+
+  <!-- Arrows from sensors to ESP32 -->
+  <path class="bus" d="M210 280 C210 330, 225 350, 225 405"/>
+  <path class="bus" d="M475 280 C475 330, 520 350, 520 405"/>
+  <path class="bus" d="M728 280 C728 330, 520 350, 520 405"/>
+  <path class="uart" d="M973 280 C973 335, 1100 350, 1100 405"/>
+  <text class="small" x="595" y="327">I2C：SDA=GPIO21，SCL=GPIO22</text>
+  <text class="small" x="980" y="327">UART：GPS NMEA</text>
+
+  <!-- Firmware flow -->
+  <path class="arrow" d="M355 449 L405 449"/>
+  <path class="arrow" d="M635 449 L685 449"/>
+  <path class="arrow" d="M915 449 L965 449"/>
+  <path class="arrow" d="M1195 449 L1245 449"/>
+
+  <!-- Firmware to algorithms -->
+  <path class="arrow" d="M225 493 C225 545, 218 575, 218 625"/>
+  <path class="arrow" d="M800 493 C800 545, 503 575, 503 625"/>
+  <path class="arrow" d="M800 493 C800 545, 788 575, 788 625"/>
+  <path class="arrow" d="M1080 493 C1080 545, 1073 575, 1073 625"/>
+  <path class="arrow" d="M1363 493 C1363 545, 1358 575, 1358 625"/>
+
+  <!-- Algorithms to PC -->
+  <path class="arrow" d="M218 700 C218 755, 228 785, 228 825"/>
+  <path class="arrow" d="M503 700 C503 755, 533 785, 533 825"/>
+  <path class="arrow" d="M788 700 C788 755, 825 785, 825 825"/>
+  <path class="arrow-soft" d="M1073 700 C1073 755, 1100 785, 1100 825"/>
+  <path class="arrow-soft" d="M1358 700 C1358 755, 1368 785, 1368 825"/>
+
+  <!-- Output flow -->
+  <path class="arrow" d="M360 858 L400 858"/>
+  <path class="arrow" d="M665 858 L705 858"/>
+  <path class="arrow" d="M945 858 L985 858"/>
+  <path class="arrow" d="M1215 858 L1255 858"/>
+
+  <!-- Bottom note -->
+  <text class="small" x="70" y="948">图注建议：图 X  多传感器融合扩展板系统总体架构。系统由传感器采集、ESP32 实时处理、标定与融合算法、电脑端可视化和论文数据输出五部分构成。</text>
+</svg>

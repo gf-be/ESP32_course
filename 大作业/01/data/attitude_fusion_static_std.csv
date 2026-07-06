@@ -1,0 +1,7 @@
+﻿phase,algorithm,roll_std_deg,pitch_std_deg,yaw_std_deg,roll_mean_deg,pitch_mean_deg,yaw_mean_deg
+level_static,complementary,0.018896,0.018606,0.033303,0.541757,-2.046894,-64.861884
+level_static,mahony,0.029921,0.027992,0.051823,0.537743,-2.030234,-64.867213
+level_static,madgwick,0.019647,0.020352,0.039390,0.544259,-2.043201,-64.872648
+tilt_static,complementary,0.026326,0.024188,0.086802,-0.110088,-42.956208,-171.446622
+tilt_static,mahony,0.038452,0.035045,0.126300,-0.111643,-42.945407,-171.447647
+tilt_static,madgwick,0.070871,0.064349,0.100184,-0.113269,-42.916653,-171.424486

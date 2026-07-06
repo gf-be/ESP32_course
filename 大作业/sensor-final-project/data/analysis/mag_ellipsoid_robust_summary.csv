@@ -1,0 +1,20 @@
+﻿item,value,unit,note
+source_file,F:\mechineSight\stm32\罗丹\大作业\data\mag_ellipsoid\mag_ellipsoid_20260616_203040.csv,,
+samples_total,3600,rows,
+samples_inlier,3553,rows,MAD radius gate
+samples_outlier,47,rows,rejected before refit
+outlier_ratio,0.013056,ratio,larger means stronger local interference
+mad_gate,76.647972,raw count,absolute radius residual gate
+svd_condition_baseline,1.030494e+06,ratio,large value means ill-conditioned data coverage
+svd_condition_robust,1.146325e+06,ratio,after outlier rejection
+baseline_hard_iron_x,77.082135,raw count,ellipsoid center
+baseline_hard_iron_y,-94.427834,raw count,ellipsoid center
+baseline_hard_iron_z,-36.852085,raw count,ellipsoid center
+robust_hard_iron_x,77.740144,raw count,ellipsoid center
+robust_hard_iron_y,-97.123337,raw count,ellipsoid center
+robust_hard_iron_z,-36.531061,raw count,ellipsoid center
+raw_radius_cv,0.060994,ratio,before calibration
+baseline_cal_radius_cv,0.057233,ratio,ordinary SVD
+robust_cal_radius_cv,0.057303,ratio,MAD-refit SVD
+robust_cv_improvement,1.064416,ratio,raw CV / robust calibrated CV
+axis_imbalance_robust,1.059581,ratio,soft-iron indicator

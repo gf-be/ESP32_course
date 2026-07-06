@@ -1,0 +1,11 @@
+/gps_logs/gps_nmea_0001.txt,460558
+/gps_logs/gps_nmea_0002.txt,3817
+/gps_baro_logs/gps_baro_0001.csv,69625
+/gps_baro_logs/gps_baro_0002.csv,301274
+/gps_baro_logs/gps_baro_0003.csv,305783
+/gps_baro_logs/gps_baro_0004.csv,21182
+/gps_baro_logs/gps_baro_0005.csv,468122
+/gps_baro_logs/gps_baro_0006.csv,72966
+/gps_baro_logs/gps_baro_0007.csv,45995
+/gps_baro_logs/gps_baro_0008.csv,32094
+/gps_baro_logs/gps_baro_0009.csv,174948

@@ -1,0 +1,21 @@
+﻿item,value,unit,note
+source_csv,F:\mechineSight\stm32\罗丹\大作业\sensor-final-project\data\fusion_comparison\imu_gps_sync\imu_gps_sync_offline_20260630_131104.csv,,synchronized IMU+GPS log
+rows,3560,rows,
+eskf_states,3076,states,
+duration,390.022,s,
+sample_rate,8.019535227385362,Hz,from t_ms
+gps_usable_rows,730,rows,
+pos_updates,730,updates,GPS position updates accepted
+vel_updates,94,updates,GPS velocity updates accepted
+gps_rejects,0,updates,position innovation gate rejects
+gps_measurement_distance,469.01166291453615,m,GPS measurement horizontal path length
+eskf_latlon_distance,2005.7929747776457,m,ESKF estimated lat/lon path length
+eskf_enu_distance,2005.7900139079488,m,ESKF ENU horizontal path length
+pos_innovation_median,2.158339094045875,m,
+pos_innovation_p95,19.47984865172273,m,
+vel_innovation_median,4.200515149245327,m/s,
+vel_innovation_p95,5.623076239924646,m/s,
+final_sigma_e,1.6222277615271739,m,
+final_sigma_n,1.6249907423462473,m,
+final_sigma_ve,0.41041693851131966,m/s,
+final_sigma_vn,0.428813599910767,m/s,
